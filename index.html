@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Farmácia da Gente - Cadastro de Medicamentos</title>
+  <link rel="stylesheet" href="./styles/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans&family=Bitter:wght@500&family=Climate+Crisis&family=Permanent+Marker&family=Raleway&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans&family=Bitter:wght@500&family=Climate+Crisis&family=Permanent+Marker&display=swap" rel="stylesheet">
+</head>
+<body>
+  <section class="sectionCadastroMedicamentos">
+
+    <a href="">
+      <h2>Home</h2>
+    </a>
+
+    <a href="">
+      <h2>Cadastro de Medicamentos</h2>
+    </a>
+
+    <a href="">
+      <h2>Cadastro de Vacinas</h2>
+    </a>
+
+    <a href="">
+      <h2>Cadastro de Cosméticos</h2>
+    </a>
+
+  </section>
+  <!-- Header -->
+  <header>
+    <div class="divImgRemedio">
+      <img src="./imgs/logo.svg" alt="Remedio_Logo">
+    </div>
+    <div class="TitleHeader">
+      <h1>Cadastro de Medicamentos</h1>
+      <h3>Farmácia da Gente</h3>
+    </div>
+  </header>
+  <section class="DisplayGridFormAndTable">
+    <!-- Formulário -->
+    <section class="SectionFormsAndGridRow">
+      <form class="SectionFormsAndGridRow" onsubmit="addMed()">
+        <label for="medName">Nome do Medicamento</label>
+        <input type="text" autocomplete="off" required id="fname" name="medName" placeholder="Bonpragrip">
+
+        <label for="medQtd">Quantidade Disponével</label>
+        <input type="text" autocomplete="off" required id="fqtd" name="medQtd"  placeholder="100">
+    
+        <label for="medPreco">Preço por unidade</label>
+        <input type="text" autocomplete="off" required id="fprc" name="medPreco" placeholder="10,00">
+      
+        <label for="medClass">Classe do Medicamento</label>
+        <input type="text" autocomplete="off" required id="fclass" name="medClass" placeholder="Antibiótico">
+
+        <button  class="submit-button">Cadastrar</button>
+      </form>  
+    </section>
+    <!-- Tabela -->
+    <div>
+      <table id="dataTable">
+          <tr>
+              <th>ID</th>
+              <th>Medicamento</th>
+              <th>Quantidade</th>
+              <th>Preço</th>
+              <th>Medicamento</th>
+              <th>Remover</th>
+
+          </tr>
+      </table>
+    </div>
+  </section>
+  <script src="./scripts/script.js"></script>
+</body>
+</html>

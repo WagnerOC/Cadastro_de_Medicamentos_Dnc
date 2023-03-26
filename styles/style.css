@@ -1,0 +1,338 @@
+body{
+  background-color:#F0C4E6;
+  margin: 0;
+  height: 300%;
+}
+
+a{
+  text-decoration: none;
+  color: white;
+}
+
+.sectionCadastroMedicamentos{
+  padding: 0 0 0 5rem;
+  display: grid;
+  grid-auto-flow: column;
+  grid-template-columns: 20%;
+  align-items: center;
+  background-color: #76BEBE;
+  height: 107px;
+}
+
+.sectionCadastroMedicamentos h2{
+  color: white;
+  font-family: 'Raleway';
+  font-size: 32px;
+  width: 300px;
+  text-align: center;
+}
+
+.sectionCadastroMedicamentos h2:hover{
+  color: #F0C4E6;
+  font-family: 'Raleway';
+  font-size: 32px;
+  text-align: center;
+}
+
+
+header{
+  display: grid;
+  grid-auto-flow: column;
+  grid-template-columns: 10px;
+  background-color: white;
+  height: 174px;
+  padding: 0 0 0 10%;
+  font-family: 'Raleway';
+  font-weight: 400;
+}
+
+header .TitleHeader{
+  text-align: center;
+  margin-top: 20px;
+}
+
+header .TitleHeader h1{
+  color: #CF509C;
+  font-size: 64px;
+  margin: 0;
+  font-weight: 400;
+}
+
+header .TitleHeader h3{
+  font-size: 36px;
+  font-weight: 400;
+  margin: 10px 0 0 0;
+}
+
+.DisplayGridFormAndTable{
+  display: grid;
+  grid-auto-flow: column;
+}
+
+.SectionFormsAndGridRow{
+  display: grid;
+  grid-auto-flow: row;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+label{
+  font-size: 28px;
+  font-family: 'Alegreya Sans', sans-serif;
+  margin-bottom: 10px;
+}
+
+input{
+  width: 467px;
+  height: 54px;
+  border: 0;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  background-color:rgba(255, 255, 255, 0.57);
+  font-family: 'Alegreya Sans', sans-serif;
+  font-size: 28px;
+  padding: 0 0 0 4%;
+  transition: ease-in-out 500ms;
+}
+
+input::placeholder{
+  color: #999;
+}
+
+input:hover{
+  background-color:rgba(255, 255, 255, 0.40);
+}
+
+button{
+  color: white;
+  background-color:#76BEBE;
+  font-size: 39px;
+  margin: auto;
+  margin-top: 58px;
+  margin-bottom: 66px;
+  height: 62px;
+  width: 306px;
+  text-align: center;
+  border: 0;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: ease-in-out 500ms; 
+}
+
+button:hover{
+  background-color: rgb(147, 210, 231);
+}
+
+table{
+  margin-top: 30px;
+  margin-left: 5% ;
+}
+
+th {
+  background: #767373;
+  color: white;
+  border: 4px solid black;
+  min-width: 50%;
+  font-family: 'Alegreya Sans SC';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 34px;
+}
+
+td {
+  background: rgba(255, 255, 255, 0.57);
+  border: 1px solid #767373;
+  text-align: center;
+  font-family: 'Alegreya Sans SC';
+  cursor: pointer;
+}
+
+
+
+
+@media only screen and (min-width: 701px) and (max-width: 1344px){
+  .sectionCadastroMedicamentos h2{
+    color: white;
+    font-family: 'Raleway';
+    font-size: 22px;
+    width: 200px;
+    text-align: center;
+  }
+
+  header{
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: 10px;
+    background-color: white;
+    height: 174px;
+    padding: 0 0 0 2%;
+    font-family: 'Raleway';
+    font-weight: 400;
+  }
+
+  header .TitleHeader h1{
+    color: #CF509C;
+    font-size: 44px;
+    margin: 0;
+    margin-left: 25%;
+    font-weight: 400;
+  }
+  header .TitleHeader h3{
+    font-size: 26px;
+    font-weight: 400;
+    margin: 10px 0 0 25%;
+  }
+
+ 
+
+  .DisplayGridFormAndTable{
+    display: grid;
+    grid-auto-flow: row;
+  }
+
+  label{
+    font-size: 25px;
+  }
+
+  #dataTable{
+    margin: auto;
+    width: 90%;
+    margin-bottom: 55px;
+  }
+
+  th {
+    height: 20px;
+    background: #767373;
+    color: white;
+    border: 4px solid black;
+    min-width: 30%;
+    font-family: 'Alegreya Sans SC';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 34px;
+  }
+
+
+  
+  td {
+    background: rgba(255, 255, 255, 0.57);
+    border: 1px solid #767373;
+    text-align: center;
+    font-family: 'Alegreya Sans SC';
+    cursor: pointer;
+  }
+}
+
+@media only screen and (min-width: 200px) and (max-width: 700px){
+  .sectionCadastroMedicamentos{
+    display: grid;
+    grid-auto-flow: row;
+    justify-content: center;
+    grid-template-columns: none;
+    padding: 0 0 0 0;
+    height: 300px;
+    line-height: 10px;
+    text-align: center;
+
+  }
+
+  .sectionCadastroMedicamentos h2{    
+    width: 100%;
+    font-size: 30px;
+    padding: 20px;
+    margin: 0 0 0 -4%;
+    border: 1px solid #F0C4E6;
+    border-radius: 10px;
+    transition: ease-out 500ms;
+  }
+  .sectionCadastroMedicamentos h2:hover{   
+    color:#F0C4E6;
+    border: 1px solid white;
+  }
+  .sectionCadastroMedicamentos a:hover{
+    transition: ease-in-out 500ms;
+  }
+  .sectionCadastroMedicamentos a:hover{   
+    color:#F0C4E6;
+  }
+
+  header{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    height: 340px;
+    padding: 0 0 0 0;
+    font-family: 'Raleway';
+    font-weight: 400;
+  }
+
+  header .divImgRemedio img{
+    margin: 0;
+    padding: 0;
+    margin-left: 34%;
+    height: 150px;
+    
+  }
+
+  header .TitleHeader h1{
+    color: #CF509C;
+    font-size: 44px;
+    margin: 0;
+    font-weight: 400;
+    text-align: center;
+  }
+  
+  header .TitleHeader h3{
+    font-size: 26px;
+    font-weight: 400;
+    margin: 5px 0 0 0;
+  }
+
+  .DisplayGridFormAndTable{
+    display: grid;
+    grid-auto-flow: row;
+  }
+ 
+  input{
+    width: 360px;
+    height: 54px;
+    border: 0;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    background-color:rgba(255, 255, 255, 0.57);
+    font-family: 'Alegreya Sans', sans-serif;
+    font-size: 28px;
+    padding: 0 0 0 4%;
+  }
+
+  #dataTable{
+    margin: auto;
+    width: 98.5%;
+    margin-left: 2%;
+    margin-bottom: 55px;
+  }
+
+  th {
+    height: 20px;
+    background: #767373;
+    color: white;
+    border: 4px solid black;
+    min-width: 20%;
+    font-family: 'Alegreya Sans SC';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 34px;
+  }
+  
+  td {
+    background: rgba(255, 255, 255, 0.57);
+    border: 1px solid #767373;
+    text-align: center;
+    font-family: 'Alegreya Sans SC';
+    min-width: 20%;
+  }
+  
+}
